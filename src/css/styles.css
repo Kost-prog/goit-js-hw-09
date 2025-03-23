@@ -1,18 +1,80 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-container {
+  width: 1140px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05);
+}
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 24px;
+    width: 408px;
+    height: 296px;
+    background: #fff;
+      }
+.field {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+    input[type="email"] {
+      border: 1px solid #808080;
+      border-radius: 4px;
+      width: 360px;
+      height: 40px;
+      margin-bottom: 8px;
+    }
+  
+     .message-field {
+      width: 360px;
+      border: 1px solid #808080;
+      border-radius: 4px;
+     }
+  
+    button {
+      font-size: 16px;
+      margin-top: 16px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      padding: 8px 16px;
+      width: 86px;
+      height: 40px;
+      background: #4e75ff;
+    }
